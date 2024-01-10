@@ -1,0 +1,12 @@
+src
+ - Config/conf.rs // Here we should have all the configurations from the application as the Port and the MongoURL
+ - Database/db.rs // Connection Methods to connect into the DB
+ - Modules
+   - Pandas/
+     - module.rs // Here should be the logic to be able to have all the files bellow to be easy to import in the main
+     - controller.rs // Here the code of the route and the open api and stuff related to the route, as the validation of the DTO if is right
+     - service.rs // Here i would like to have the logic and the request to the respository
+     - repository.rs // Here i would like to have the logic to write in the database
+     - schema.rs // Here we shpuld have the schema as the data will be recored to the database, basically what will be used by the repository
+     - dto.rs // Here we should have the DTO to be used by the controller 
+ - main.rs // Here we should have the logic to start everything
