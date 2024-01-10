@@ -23,7 +23,7 @@ Welcome to `pandas-api`, a simple yet illustrative example of how to create REST
 1. **Clone the Repository** :
 
 ```
-git clone https://github.com/your-username/pandas-api.git
+git clone https://github.com/viniciusgomes/pandas-api
 cd pandas-api
 
 ```
