@@ -1,12 +1,63 @@
-src
- - Config/conf.rs // Here we should have all the configurations from the application as the Port and the MongoURL
- - Database/db.rs // Connection Methods to connect into the DB
- - Modules
-   - Pandas/
-     - module.rs // Here should be the logic to be able to have all the files bellow to be easy to import in the main
-     - controller.rs // Here the code of the route and the open api and stuff related to the route, as the validation of the DTO if is right
-     - service.rs // Here i would like to have the logic and the request to the respository
-     - repository.rs // Here i would like to have the logic to write in the database
-     - schema.rs // Here we shpuld have the schema as the data will be recored to the database, basically what will be used by the repository
-     - dto.rs // Here we should have the DTO to be used by the controller 
- - main.rs // Here we should have the logic to start everything
+# Pandas API in Rust
+
+## Overview
+
+Welcome to `pandas-api`, a simple yet illustrative example of how to create RESTful APIs in Rust, specifically tailored for developers transitioning from Node.js. This project demonstrates the fundamental aspects of building a web service in Rust, including routing, database operations, and structured project organization. The focus is on interfacing with MongoDB, one of the popular databases often used in conjunction with Node.js applications.
+
+## Features
+
+* **RESTful API Endpoints** : Create, Read (single and all), Update, and Delete (CRUD) operations for 'panda' entities.
+* **MongoDB Integration** : Demonstrates how to connect and interact with MongoDB from Rust.
+* **Modular Structure** : Organized project structure with separate modules for configuration, database access, and entity-specific logic.
+* **Swagger Documentation** : Includes Swagger UI setup for API documentation and testing.
+
+## Getting Started
+
+### Prerequisites
+
+* Rust Programming Environment: Ensure you have [Rust installed]().
+* MongoDB: Make sure MongoDB is [installed and running]() on your local machine or accessible via a network connection.
+
+### Installation
+
+1. **Clone the Repository** :
+
+```
+git clone https://github.com/your-username/pandas-api.git
+cd pandas-api
+
+```
+
+2. **Build the Project** :
+
+```
+cargo build
+
+```
+
+3. **Run the Application** :
+
+```
+cargo run
+
+```
+
+   The API will be available at `http://localhost:8000`.
+
+### API Endpoints
+
+* `POST /pandas`: Create a new panda.
+* `GET /pandas`: Retrieve all pandas.
+* `GET /pandas/:id`: Retrieve a single panda by ID.
+* `PUT /pandas/:id`: Update a panda by ID.
+* `DELETE /pandas/:id`: Delete a panda by ID.
+
+Swagger UI for the API documentation and testing can be accessed at `http://localhost:8000/swagger-ui`.
+
+## Contributing
+
+Contributions to enhance `pandas-api` are welcome. Feel free to fork the repository and submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License]().
