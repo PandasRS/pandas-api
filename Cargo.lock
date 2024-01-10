@@ -1141,10 +1141,12 @@ version = "0.1.0"
 dependencies = [
  "futures",
  "mongodb",
+ "once_cell",
  "rocket",
  "rocket_okapi",
  "schemars",
  "serde",
+ "tokio",
 ]
 
 [[package]]
