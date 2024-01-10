@@ -1,6 +1,9 @@
+![PandaAPI](panda.png)
+
 # Pandas API in Rust
 
-## Overview
+## 
+Overview
 
 Welcome to `pandas-api`, a simple yet illustrative example of how to create RESTful APIs in Rust, specifically tailored for developers transitioning from Node.js. This project demonstrates the fundamental aspects of building a web service in Rust, including routing, database operations, and structured project organization. The focus is on interfacing with MongoDB, one of the popular databases often used in conjunction with Node.js applications.
 
